@@ -1,0 +1,518 @@
+// ignore_for_file: no_logic_in_create_state
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+
+class NewestItemsWidget extends StatefulWidget {
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: Padding(
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        child: Column(
+          children: [
+            // for (int i = 0; i < 10; i++)
+            // Single Item
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: Container(
+                width: 380,
+                height: 150,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 3,
+                    blurRadius: 10,
+                    offset: Offset(0, 3),
+                  ),
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    InkWell(
+                      onTap: () {},
+                      child: Container(
+                        alignment: Alignment.center,
+                        child: Image.asset("images/seblak.png",
+                        height: 120,
+                        width: 150,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 190,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                        Text(
+                          "Seblak Original",
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      
+                        Text(
+                          "Taste Our Seblak Original, We Provide Our Great Foods",
+                          style: TextStyle(
+                            fontSize: 16,
+                            //fontWeight: FontWeight.bold,
+                          ),
+                        ),
+
+                        RatingBar.builder(
+                          initialRating: 4,
+                          minRating: 1,
+                          direction: Axis.horizontal,
+                          itemCount: 5,
+                          itemSize: 18,
+                          itemPadding: EdgeInsets.symmetric(horizontal: 4),
+                          itemBuilder: (context, _) => Icon(
+                            Icons.star,
+                            color: Colors.red,
+                            ),
+                          onRatingUpdate: (index) {},
+                          ),
+                          Text(
+                            "\Rp.15.000",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.red,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(vertical: 10),
+                            child: Column(
+                            //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                           children: [
+                            Icon(
+                              Icons.favorite_border,
+                              color: Colors.red,
+                              size: 26,
+                              ),
+                            Icon(
+                              CupertinoIcons.cart,
+                              color: Colors.red,
+                              size: 26,
+                              ),
+                           ],
+                            ),
+                            ),
+                      ],),
+                    )
+                  ],
+                ),
+              ),
+              ),
+
+          // Single Item
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: Container(
+                width: 380,
+                height: 150,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 3,
+                    blurRadius: 10,
+                    offset: Offset(0, 3),
+                  ),
+          ],
+                ),
+                child: Row(
+                  children: [
+                    InkWell(
+                      onTap: () {},
+                      child: Container(
+                        alignment: Alignment.center,
+                        child: Image.asset("images/bakso.png",
+                        height: 120,
+                        width: 150,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 190,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                        Text(
+                          "Bakso Mix Chuanki",
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      
+                        Text(
+                          "Taste Our Bakso Mix Chuanki, We Provide Our Great Foods",
+                          style: TextStyle(
+                            fontSize: 16,
+                            //fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        RatingBar.builder(
+                          initialRating: 4,
+                          minRating: 1,
+                          direction: Axis.horizontal,
+                          itemCount: 5,
+                          itemSize: 18,
+                          itemPadding: EdgeInsets.symmetric(horizontal: 4),
+                          itemBuilder: (context, _) => Icon(
+                            Icons.star,
+                            color: Colors.red,
+                            ),
+                          onRatingUpdate: (index) {},
+                          ),
+                          Text(
+                            "\Rp.20.000",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.red,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(vertical: 10),
+                            child: Column(
+                            //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                           children: [
+                            Icon(
+                              Icons.favorite_border,
+                              color: Colors.red,
+                              size: 26,
+                              ),
+                            Icon(
+                              CupertinoIcons.cart,
+                              color: Colors.red,
+                              size: 26,
+                              ),
+                           ],
+                            ),
+                            ),
+                      ],),
+                    ),
+                  ],
+                ),
+              ),
+              ),
+         
+          // Single Item
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: Container(
+                width: 380,
+                height: 150,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 3,
+                    blurRadius: 10,
+                    offset: Offset(0, 3),
+                  ),
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    InkWell(
+                      onTap: () {},
+                      child: Container(
+                        alignment: Alignment.center,
+                        child: Image.asset("images/orangejuice.jpg",
+                        height: 120,
+                        width: 150,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 190,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                        Text(
+                          "Orange Juice",
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      
+                        Text(
+                          "Taste Our Orange Juice, We Provide Our Great Foods",
+                          style: TextStyle(
+                            fontSize: 16,
+                            //fontWeight: FontWeight.bold,
+                          ),
+                        ),
+
+                        RatingBar.builder(
+                          initialRating: 4,
+                          minRating: 1,
+                          direction: Axis.horizontal,
+                          itemCount: 5,
+                          itemSize: 18,
+                          itemPadding: EdgeInsets.symmetric(horizontal: 4),
+                          itemBuilder: (context, _) => Icon(
+                            Icons.star,
+                            color: Colors.red,
+                            ),
+                          onRatingUpdate: (index) {},
+                          ),
+                          Text(
+                            "\Rp.10.000",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.red,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(vertical: 10),
+                            child: Column(
+                            //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                           children: [
+                            Icon(
+                              Icons.favorite_border,
+                              color: Colors.red,
+                              size: 26,
+                              ),
+                            Icon(
+                              CupertinoIcons.cart,
+                              color: Colors.red,
+                              size: 26,
+                              ),
+                           ],
+                            ),
+                            ),
+                      ],),
+                    )
+                  ],
+                ),
+              ),
+              ),
+         
+         // Single Item
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: Container(
+                width: 380,
+                height: 150,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 3,
+                    blurRadius: 10,
+                    offset: Offset(0, 3),
+                  ),
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    InkWell(
+                      onTap: () {},
+                      child: Container(
+                        alignment: Alignment.center,
+                        child: Image.asset("images/ayamgeprek.jpg",
+                        height: 120,
+                        width: 150,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 190,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                        Text(
+                          "Ayam Geprek Sambal Korek",
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      
+                        Text(
+                          "Taste Our Ayam Geprek Sambal Korek, We Provide Our Great Foods",
+                          style: TextStyle(
+                            fontSize: 16,
+                            //fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        RatingBar.builder(
+                          initialRating: 4,
+                          minRating: 1,
+                          direction: Axis.horizontal,
+                          itemCount: 5,
+                          itemSize: 18,
+                          itemPadding: EdgeInsets.symmetric(horizontal: 4),
+                          itemBuilder: (context, _) => Icon(
+                            Icons.star,
+                            color: Colors.red,
+                            ),
+                          onRatingUpdate: (index) {},
+                          ),
+                          
+                          Text(
+                            "\Rp.18.000",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.red,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(vertical: 10),
+                            child: Column(
+                            //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                           children: [
+                            Icon(
+                              Icons.favorite_border,
+                              color: Colors.red,
+                              size: 26,
+                              ),
+                            Icon(
+                              CupertinoIcons.cart,
+                              color: Colors.red,
+                              size: 26,
+                              ),
+                           ],
+                            ),
+                            ),
+                      ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              ),
+
+           // Single Item
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: Container(
+                width: 380,
+                height: 150,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 3,
+                    blurRadius: 10,
+                    offset: Offset(0, 3),
+                  ),
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    InkWell(
+                      onTap: () {},
+                      child: Container(
+                        alignment: Alignment.center,
+                        child: Image.asset("images/lemontea.jpg",
+                        height: 120,
+                        width: 150,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 190,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                        Text(
+                          "Lemon Tea",
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      
+                        Text(
+                          "Taste Our Lemon Tea, We Provide Our Great Foods",
+                          style: TextStyle(
+                            fontSize: 16,
+                            //fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        RatingBar.builder(
+                          initialRating: 4,
+                          minRating: 1,
+                          direction: Axis.horizontal,
+                          itemCount: 5,
+                          itemSize: 18,
+                          itemPadding: EdgeInsets.symmetric(horizontal: 4),
+                          itemBuilder: (context, _) => Icon(
+                            Icons.star,
+                            color: Colors.red,
+                            ),
+                          onRatingUpdate: (index) {},
+                          ),
+                          Text(
+                            "\Rp.8.000",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.red,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(vertical: 10),
+                            child: Column(
+                            //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                           children: [
+                            Icon(
+                              Icons.favorite_border,
+                              color: Colors.red,
+                              size: 26,
+                              ),
+                            Icon(
+                              CupertinoIcons.cart,
+                              color: Colors.red,
+                              size: 26,
+                              ),
+                           ],
+                            ),
+                            ),
+                      ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              ),
+
+          ],
+        ),
+        ),
+    );
+  }
+  
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
+  }
+  
+ 
+}
